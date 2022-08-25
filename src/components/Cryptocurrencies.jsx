@@ -16,6 +16,7 @@ const Cryptocurrencies = () => {
         {cryptos.map((currency) => (
           <Col xs={24} sm={12} lg={6} classname="crypto-card" key={currency.uuid}>
             <Link key={currency.uuid} to={`/crypto/${currency.uuid}`}>
+               {/* Changed the styling to restrict the size of the card  */}
                 <Card 
                   title={`${currency.rank}. ${currency.name}`}
                   extra={<img style={{height:30}}className="crypto-image" src={currency.iconUrl}/>}
